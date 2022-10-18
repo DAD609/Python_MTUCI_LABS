@@ -1,0 +1,16 @@
+body{
+    background: #1abc9c;
+font-family: Tahoma, Arial, sans-serif; 
+color: #ffffff;
+
+}
+
+.post-title{
+    text-decoration: underline;
+}
+.article-created-date{
+    text-align: right;
+}
+.all{
+    font-size: 10px;
+}
