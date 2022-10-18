@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'articles/css/newstyle.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архив статей</title>
+   
+     <img src="{% static  'articles/mogus.png' %}" alt ="амонгус" width="600px"height="100px">
+
+</head>
+<body>
+    <div class="header">
+       
+
+
+
+    </div>
+    <div class="archive">
+        <div class="one-post">
+          <h2 class="all"> <a href="{% url 'articles' %}" >Все статьи</a></h2>
+            <h2 class="post-title">{{ post.title }}</h2>
+            <div class="article-info">
+            <div class="article-author">{{ post.author.username }}</div>
+            <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+            <p class="article-text">{{ post.get_excerpt }}</p>
+            </div>
+            
+    </div>
+
+<div id="img2">
+    <img src="{% static  'articles/photochka.png' %}" alt ="pht" width="600px"height="300px">
+</div>
+    
+    </body>
+    
+</html>
